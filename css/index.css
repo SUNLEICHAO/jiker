@@ -1,0 +1,175 @@
+.page-header {}
+
+.font-abs {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.header-container {
+  display: flex;
+  margin: auto;
+  width: 1240px;
+  height: 110px;
+  /* background-color: #bfc; */
+}
+
+/* logo位置 */
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  height: 65px;
+}
+
+.logo-img {
+  width: 135px;
+  height: 61px;
+  margin-right: 54px;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.header-nav {
+  margin-top: 15px;
+}
+
+.header-nav-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-top-search {
+  position: relative;
+  display: flex;
+}
+
+.header-top-search .search-icon {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 25px;
+  height: 30px;
+  background-image: url(../img/search.png);
+  background-size: 16px;
+  background-repeat: no-repeat;
+}
+
+.header-top-search .search-input {
+  width: 643px;
+  height: 36px;
+  border: none;
+  outline: none;
+  padding: 0 15px 0 30px;
+  border-radius: 4px 0 0 4px;
+  line-height: 36px;
+  background-color: #f5f5f5;
+}
+
+.header-top-search .search-input::placeholder {
+  color: #c0c4cc;
+  font-size: 13px;
+}
+
+.header-top-search .search-btn {
+  width: 26px;
+  line-height: 1px;
+  text-wrap: nowrap;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  box-sizing: content-box;
+  text-align: center;
+  background-color: #dedede;
+  font-weight: 500;
+  color: #909399;
+  border-left: 1px solid #dcdfe6;
+  border-right: 1px solid #dcdfe6;
+}
+
+
+.header-top-button .button-login {
+  width: 75px;
+  height: 32px;
+  padding: 0 15px;
+  font-size: 12px;
+  color: #ffff;
+  box-sizing: content-box;
+  border: none;
+  background-color: #1e1e1e;
+}
+
+.header-nav-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 19px;
+}
+
+.header-zone-list {
+  display: flex;
+}
+
+.header-zone-list .zone-item {
+  height: 22px;
+  padding-bottom: 18px;
+  padding-bottom: 18px;
+  margin-right: 40px;
+  line-height: 22px;
+  color: #333;
+}
+
+.header-zone-list .zone-item.talent::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 30px;
+  background-image: url(../img/nuxt.png);
+  background-repeat: no-repeat;
+  background-size: 20px;
+
+}
+
+.header-zone-list .zone-item .zone-item-link:hover {
+  color: #0fc700;
+}
+
+.header-link-list {
+  display: flex;
+}
+
+.header-link-list .link-item {
+  margin-left: 40px;
+  padding-bottom: 12px;
+}
+
+.header-link-list .link-item .link-item-link {
+  display: flex;
+  align-items: center;
+  height: 22px;
+  /* line-height: 22px; */
+  font-size: 14px;
+  color: #858585;
+}
+.header-link-list .link-item .link-item-link:hover{
+  color: #0fc700;
+}
+
+.header-link-list .link-item .link-item-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.header-link-list .link-item.packet .link-item-img {
+  width: 17px;
+
+}
