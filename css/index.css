@@ -1,20 +1,69 @@
-.page-header {}
+::-webkit-scrollbar {
+  display: none;
+}
 
-.font-abs {
+body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  background-color: #f5f5f5;
+}
+
+.font-abs{
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+.font-topic {
+  font-weight: 700;
+  font-size: 26px;
+  color: #333;
+  line-height: 26px;
+  margin-right: 12px;
+}
+
+.font-time {
+  font-size: 14px;
+  color: #333;
+  line-height: 20px;
+}
+
+.font-desc {
+  font-size: 14px;
+  color: #666;
+}
+
+.font-content {
+  font-size: 14px;
+  white-space: normal;
+  line-height: 20px;
+  color: #999;
+}
+
+.font-course {
+  font-size: 13px;
+  line-height: 20px;
+  color: #999;
+  white-space: nowrap;
+}
+
+.icon-more::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+  background: url(../img/arrow-more.svg) no-repeat 0 0;
 }
 
 a {
   color: #000;
   text-decoration: none;
 }
-
+.page-header{
+  background-color: #fff;
+}
 .header-container {
   display: flex;
   margin: auto;
   width: 1240px;
   height: 110px;
-  /* background-color: #bfc; */
 }
 
 /* logo位置 */
@@ -23,11 +72,11 @@ a {
   align-items: center;
 }
 
-.logo-container {
+.page-header .logo-container {
   height: 65px;
 }
 
-.logo-img {
+.page-header .logo-img {
   width: 135px;
   height: 61px;
   margin-right: 54px;
@@ -56,10 +105,10 @@ a {
 .header-top-search .search-icon {
   position: absolute;
   top: 8px;
-  left: 8px;
+  left: 9px;
   width: 25px;
   height: 30px;
-  background-image: url(../img/search.png);
+  background-image: url(../img/search-v2.png);
   background-size: 16px;
   background-repeat: no-repeat;
 }
@@ -89,13 +138,19 @@ a {
   border-radius: 0 4px 4px 0;
   box-sizing: content-box;
   text-align: center;
-  background-color: #dedede;
+  background-color: #d8d8d8;
   font-weight: 500;
   color: #909399;
   border-left: 1px solid #dcdfe6;
   border-right: 1px solid #dcdfe6;
+  transition: all .3s;
+  cursor: pointer;
 }
 
+.header-top-search .search-btn:hover{
+  color: #fff;
+  background-color: #0fc700;
+}
 
 .header-top-button .button-login {
   width: 75px;
@@ -106,6 +161,10 @@ a {
   box-sizing: content-box;
   border: none;
   background-color: #1e1e1e;
+}
+
+.header-top-button .button-login:hover{
+  opacity: .8;
 }
 
 .header-nav-bottom {
@@ -135,7 +194,6 @@ a {
   background-image: url(../img/nuxt.png);
   background-repeat: no-repeat;
   background-size: 20px;
-
 }
 
 .header-zone-list .zone-item .zone-item-link:hover {
@@ -155,11 +213,11 @@ a {
   display: flex;
   align-items: center;
   height: 22px;
-  /* line-height: 22px; */
   font-size: 14px;
   color: #858585;
 }
-.header-link-list .link-item .link-item-link:hover{
+
+.header-link-list .link-item .link-item-link:hover {
   color: #0fc700;
 }
 
@@ -171,5 +229,865 @@ a {
 
 .header-link-list .link-item.packet .link-item-img {
   width: 17px;
+}
 
+.banner-section {
+  position: relative;
+}
+
+.banner-carosel {
+  position: relative;
+}
+
+.carosel-link {
+  display: flex;
+}
+
+.carosel-link-img {
+  height: 380px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 26px;
+  left: 50%;
+  height: 12px;
+  margin-left: -340px;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-indicators .indicator-item {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #555;
+  margin-right: 8px;
+}
+
+.carousel-indicators .indicator-item.active {
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  background-image: url(../img/dot_active.svg);
+  background-size: 12px;
+}
+
+.banner-content {
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  width: 1240px;
+  height: 360px;
+  padding: 10px 0;
+  margin-left: -620px;
+}
+
+.banner-menu-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+  height: 360px;
+  background-color: rgba(37, 34, 34, .5);
+  ;
+}
+
+.banner-menu-list .banner-menu-item {
+  display: flex;
+  /* 问题 为何此处不能使文字居中 */
+  /* align-items: center; */
+  justify-content: space-between;
+  height: 40px;
+  padding-left: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #fff;
+}
+
+.menu-item-nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.menu-item-nav::after {
+  position: absolute;
+  top: 50%;
+  left: 173px;
+  transform: translateY(-50%);
+  content: "";
+  width: 9px;
+  height: 9px;
+  background: url(../img/arrow-right.svg) no-repeat 0 0;
+  background-size: 6px;
+}
+
+.menu-item-nav .banner-item-name {
+  /* 问题。为何这里需要人为设定行高，否则被压为14px */
+  line-height: 19px;
+}
+
+/* 弹出层的样式 */
+.banner-menu-item:hover .menu-item-list {
+  display: block;
+}
+
+.banner-menu-item:hover {
+  background-color: rgba(18, 18, 19, .7);
+}
+
+
+.menu-item-list {
+  position: absolute;
+  top: 0px;
+  left: 210px;
+  width: 720px;
+  height: 360px;
+  display: none;
+  background-color: #222;
+}
+
+
+.menu-catalog-list {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-catalog-dt {
+  position: relative;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 12px;
+  padding-left: 10px;
+
+}
+
+.menu-catalog-dt::before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  margin-right: 10px;
+  border-radius: 2px;
+  transform: translateY(-50%);
+  background-color: #d8d8d8;
+}
+
+.menu-catalog-dl:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+.menu-catalog-dd-list {
+  display: flex;
+  padding-left: 10px;
+
+}
+
+.menu-catalog-dd {
+  position: relative;
+  margin: 0 20px 12px 0;
+  line-height: 20px;
+}
+
+.menu-catalog-dd:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -10px;
+  width: 1px;
+  height: 14px;
+  background-color: #8c8c8d;
+}
+
+.menu-catalog-dd:hover {
+  color: #0fc700;
+}
+
+.board-link-img {
+  width: 210px;
+  height: 130px;
+  position: absolute;
+  top: 55px;
+  right: 0px;
+}
+
+.stack-section {
+  padding: 40px 0;
+  background-color: #fff;
+}
+
+.stack-section-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1240px;
+  height: 122px;
+  margin: auto;
+}
+
+.stack-technology-list {
+  width: 925px;
+  height: 122px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.stack-technology-item {
+  display: flex;
+}
+
+.stack-technology-item .stack-item-cover {
+  width: 295px;
+  height: 56px;
+}
+
+.stack-group-list {
+  display: flex;
+  width: 295px;
+  justify-content: space-between;
+}
+
+.stack-group-item {
+  position: relative;
+}
+
+.stack-group-cover {
+  width: 142px;
+  height: 122px;
+}
+
+.stack-group-list .stack-group-tip {
+  position: absolute;
+  opacity: 0;
+  width: 150px;
+  height: 172px;
+  top: -135px;
+  left: -4px;
+  background-color: #fff;
+}
+
+/* hover时出现 */
+.stack-group-item:hover .stack-group-tip {
+  opacity: 1;
+  transition: opacity .5s;
+}
+
+.stack-group-list .stack-group-tip span {
+  display: block;
+  font-size: 11px;
+  padding: 15px 0 8px;
+  text-align: center;
+}
+
+.stack-group-list .stack-group-tip img {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+}
+
+.stack-group-list .stack-group-tip::after {
+  content: "";
+  width: 0;
+  position: absolute;
+  bottom: -22px;
+  border-top: 22px solid #fff;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+}
+
+.panel-section {
+  position: relative;
+  padding: 40px 0;
+  background-color: #f5f5f5;
+}
+
+.panel-list {
+  position: relative;
+  margin: auto;
+  box-sizing: border-box;
+  width: 1240px;
+  height: 380px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  padding-left: 315px;
+}
+
+.panel-item-link {
+  display: flex;
+}
+
+.panel-web .panel-item-img {
+  position: absolute;
+  left: 50%;
+  margin-left: -620px;
+  top: 40px;
+  width: 295px;
+  height: 380px;
+  flex: 0;
+}
+
+.panel-item.free .panel-item-img,
+.panel-item.vip .panel-item-img {
+  width: 295px;
+  height: 180px;
+}
+
+.panel-item.python .panel-item-img,
+.panel-item.beginner .panel-item-img {
+  width: 610px;
+  height: 180px;
+}
+
+.papar-section {
+  height: 220px;
+  background-color: #303738;
+}
+
+.papar-container {
+  width: 1440px;
+  height: 220px;
+  margin: auto;
+  background-image: url(../img/paper-ad.png);
+  background-size: 1440px 220px;
+}
+
+.box1-flex {
+  display: flex;
+}
+
+.campus-section {
+  display: flex;
+  width: 1240px;
+  height: 466px;
+  margin: auto;
+}
+
+.campus-hot {
+  width: 630px;
+}
+
+.campus-hot-header,
+.campus-career-header,
+.course-header {
+  align-items: center;
+  padding: 40px 0 20px;
+  display: flex;
+}
+
+.campus-hot-container {
+  display: flex;
+}
+
+.campus-hot-item {
+  margin-right: 20px;
+}
+
+.campus-hot-content {
+  position: relative;
+  width: 245px;
+  height: 143px;
+  padding: 17px 25px 30px 25px;
+  background-color: #fff;
+}
+
+.campus-hot-content::after {
+  content: " ";
+  position: absolute;
+  top: -150px;
+
+  left: 25px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: url(../img/course-state.svg) no-repeat;
+}
+
+.hot-content-time {
+  display: flex;
+  align-items: center;
+}
+
+.hot-content-time__icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(../img/icon-time.svg);
+  background-size: 16px;
+}
+
+.separate {
+  display: inline-block;
+  transform: rotate(90deg);
+  margin-left: 10px;
+  color: #999;
+  font-size: 14px;
+}
+
+.campus-hot-cover,
+.campus-career-item__img {
+  width: 295px;
+  height: 170px;
+  display: block;
+  position: relative;
+}
+
+
+.hot-content-desc {
+  margin: 13px 0 18px;
+  height: 60px;
+}
+
+.hot-content-type {
+  display: flex;
+  align-items: center;
+  height: 32px;
+}
+
+.hot-type-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  line-height: 20px;
+  background-image: url(../img/icon_career.svg);
+}
+
+.hot-type-name {
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+}
+
+.campus-career-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.campus-career-list .campus-career-item {
+  margin-bottom: 20px;
+}
+
+/* 课程部分 */
+.course-section {
+  width: 1240px;
+  margin: auto;
+}
+
+.course-header {
+  display: flex;
+}
+
+.campus-desc {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.campus-desc--item,
+.campus-total--item {
+  transition: color .4s ease;
+}
+
+.campus-desc--item:hover,
+.campus-total--item:hover {
+  color: #0fc700;
+}
+
+.vertical-bottom .campus-total--item{
+  position: relative;
+  /* 问题，这里的1px哪里差出来的 */
+  top: 1px;
+}
+
+.campus-total--icon.icon-more::after{
+  position: relative;
+  top: 1px;
+}
+
+.campus-desc--line {
+  margin: 0 6px;
+  font-weight: 700px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #0fc700;
+  transform: rotate(-8deg);
+}
+
+.campus-total {
+  display: flex;
+  align-items: center;
+}
+
+/* 卡片部分 */
+.course-list{
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 1137px;
+}
+.course-item {
+  width: 295px;
+  height: 359px;
+}
+
+/* 其中的封面 */
+.course-item-cover {
+  position: relative;
+}
+
+.course-item-cover .cover-img {
+  width: 295px;
+  height: 170px;
+  background: url(../img/course-safe.png) center center / 295px 170px no-repeat;
+}
+
+.course-item.kotlin .course-item-cover .cover-img {
+  background-image: url(../img/course-kotlin.png);
+}
+
+.course-item.neural-network .course-item-cover .cover-img {
+  background-image: url(../img/course-neural-network.png);
+}
+
+.course-item.git .course-item-cover .cover-img {
+  background-image: url(../img/course-git.png);
+}
+
+/* 统一设置标签的位置 */
+.card-course-tag {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  border-radius: 0 0 11px;
+}
+
+.card-course-tag.status {
+  left: 0;
+  width: 44px;
+  height: 26px;
+  background-color: #0fc700;
+  color: #fff;
+}
+
+.card-course-tag.card-course-level {
+  right: 10px;
+  width: 45px;
+  height: 28px;
+}
+
+.card-course-tag.card-course-level1 {
+  background-image: url(../img/course-level1.svg);
+}
+
+.card-course-tag.card-course-level2 {
+  background-image: url(../img/course-level2.svg);
+}
+
+.card-course-tag.card-course-level3 {
+  background-image: url(../img/course-level3.svg);
+}
+
+.card-course-category {
+  position: absolute;
+  bottom: 0;
+  padding: 0 25px;
+  display: flex;
+}
+
+.course-category-item {
+  padding: 0 10px;
+  margin: 0 6px 10px 0;
+  border-radius: 13px;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 26px;
+  background-color: hsla(0, 0%, 100%, .59);
+  color: #333;
+  transition: all .2 ease;
+}
+
+/* 下半部分 */
+.course-item-content {
+  display: block;
+  width: 250px;
+  padding: 15px 20px 20px 25px;
+  background-color: #fff;
+}
+
+.card-course-title {
+  height: 56px;
+  margin-bottom: 4px;
+  line-height: 28px;
+  font-size: 20px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  color: #333;
+}
+
+.card-course-describe {
+  font-size: 14px;
+  color: #666;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 12px;
+}
+.card-course-info{
+  display: flex;
+  align-items: center;
+}
+.card-course-info .separate{
+  font-size: 13px;
+}
+.time-gray-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  background-image: url(../img/icon-time-gray.svg);
+  background-size: 16px;
+}
+
+.card-course-price{
+  margin-top: 10px;
+  display: flex;
+  height: 32px;
+  align-items: flex-end;
+}
+.card-course-price.card-course-hover{
+  display: none;
+}
+.card-course-price-label{
+  font-size: 14px;
+  line-height: 20px;
+  color: #ff4000;
+  font-weight: 500;
+}
+
+.card-course-price-current{
+  font-size: 24px;
+  line-height: 24px;
+  color: #ff4000;
+  font-weight: 500;
+  font-weight: 700;
+}
+.card-course-price-original{
+  color: #999;
+  text-decoration: line-through;
+  font-size: 14px;
+  margin-left: 8px;
+  line-height: 20px;
+  font-weight: 600;
+
+}
+
+.campus-total.vertical-bottom{
+  width: 142px;
+  height: 42px;
+  border: 1px solid #999;
+  background-color: #f5f5f5;
+  margin: 40px auto 0px;
+  display: flex;
+  justify-content: center;
+}
+
+/* 底部信息 */
+.page-footer {
+  background-color: #252222;
+  padding: 50px 100px 57px;
+  margin-top: 40px;
+}
+
+.footer-btn{
+  width: 144px;
+  height: 43px;
+  background-color: #333;
+  text-align: center;
+  font-size: 12px;
+  line-height: 43px;
+  color: #fff;
+  transition: .2s ease;
+  border: none;
+}
+.footer-container {
+  width: 1240px;
+  height: 343px;
+  margin: auto;
+}
+.footer-vertical_top{
+  display: flex;
+  padding-bottom: 34px;
+  border-bottom: 1px solid #414141;
+}
+
+.page-footer .logo-container{
+  margin-right: 128px;
+}
+.page-footer .logo-img{
+  display: block;
+  width: 156px;
+  height: 70px;
+  margin-bottom: 19px;
+  background-image: url(../img/logo-white.svg);
+  background-size: 156px 70px;
+}
+
+.logo-desc{
+  margin-bottom: 40px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 17px;
+  color: 12px;
+  color: #bbb;
+}
+.contact-title{
+  height: 22px;
+  margin-bottom: 6px;
+  line-height: 22px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.contact-number{
+  height: 28px;
+  line-height: 28px;
+  font-size: 20px;
+  color: #d5d5d5;
+  margin-bottom: 11px;
+}
+.nav-container{
+  margin-right: 60px;
+}
+.nav-list{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.nav-list .nav-title{
+  height: 22px;
+  line-height: 22px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin-right: 20px;
+}
+.nav-list .nav-item{
+  height: 20px;
+  margin-right: 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #d5d5d5;
+}
+
+.cooperate-container{
+  width: 383px;
+  margin-right: 54px;
+}
+
+.cooperate-logos{
+  display: flex;
+  flex-wrap: wrap;
+}
+.service-item{
+  margin-bottom: 5px;
+}
+
+.footer-sub-title{
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #fff;
+}
+
+.serve-button{
+  margin-bottom: 8px;
+}
+.serve-desc{
+  width: 144px;
+  height: 34px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 17px;
+  color: #d5d5d5;
+
+}
+
+.serve-container .icon{
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  width: 18px;
+  height: 15px;
+  background-size: 18px 15px;
+  margin-right: 6px;
+}
+.enterprise-icon {
+  background-image: url(../img/icon_enterprise.svg);
+}
+.school-icon{
+  background-image: url(../img//icon_school.svg);
+}
+
+.cooperate-logos .service-item{
+  height: 25px;
+
+}
+
+.footer-vertical_bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+.social-container{
+  display: flex;
+}
+.social-container .icon{
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 25px;
+  background-repeat: no-repeat;
+}
+
+.sina-icon{
+  background-image: url(../img/icon_weibo.svg);
+}
+.twitter-icon{
+  background-image: url(../img/icon_twitter.svg);
+
+}
+.github-icon{
+  background-image: url(../img/icon_github.svg);
+}
+.copyright-container,
+.copyright-link{
+  height: 17px;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 17px;
+  color: #8e8e8e;
 }

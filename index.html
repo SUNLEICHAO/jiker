@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,58 +11,1073 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
   <header class="page-header">
     <div class="header-container">
-        <div class="header-logo">
-          <a class="logo-container" href="javascript:;">
-            <img class="logo-img" src="./img/logo_mini.svg" alt="">
-          </a>
-        </div>
-        <div class="header-nav">
-          <div class="header-nav-top">
-            <div class="header-top-search">
-
-              <i class="search-icon">
-              </i>
-              <input class="search-input" type="text" placeholder="你想学点什么？">
-              <button class="search-btn">搜索</button>
-            </div>
-            <div class="header-top-button">
-              <button class="button-login font-abs">登录/注册</button>
-            </div>
+      <div class="header-logo">
+        <a class="logo-container" href="javascript:;">
+          <img class="logo-img" src="./img/logo_mini.svg" alt="">
+        </a>
+      </div>
+      <div class="header-nav">
+        <div class="header-nav-top">
+          <div class="header-top-search">
+            <i class="search-icon"></i>
+            <input class="search-input" type="text" placeholder="你想学点什么？">
+            <button class="search-btn">搜索</button>
           </div>
-          <div class="header-nav-bottom">
-            <ul class="header-zone-list">
-              <li class="zone-item"><a class="zone-item-link" href="javaScript:;">限免专区</a></li>
-              <li class="zone-item"><a class="zone-item-link" href="javaScript:;">视频课</a></li>
-              <li class="zone-item"><a class="zone-item-link" href="javaScript:;">实战营</a></li>
-              <li class="zone-item"><a class="zone-item-link" href="javaScript:;">练功房</a></li>
-              <li class="zone-item"><a class="zone-item-link" href="javaScript:;">专题课</a></li>
-              <li class="zone-item talent"><a class="zone-item-link" href="javaScript:;">企业人才云</a></li>
-            </ul>
-            <ul class="header-link-list">
-              <li class="link-item member">
-                <a class="link-item-link" href="javascript:;" >
-                  会员
-                </a>
-              </li>
-              <li class="link-item packet">
-                <a class="link-item-link" href="javaScript:;">
-                  <img class="link-item-img" src="./img/hongbao.png" alt="">
-                  <span>邀请红包</span>
-                </a>
-              </li>
-              <li class="link-item community">
-                <a class="link-item-link" href="javaScript:;">
-                  <span>极客百万社区</span>
-                  <img class="link-item-img" src="./img/airplane.jpeg" alt="">
-                </a>
-              </li>
-            </ul>
+          <div class="header-top-button">
+            <button class="button-login font-abs">登录/注册</button>
           </div>
         </div>
+        <div class="header-nav-bottom">
+          <ul class="header-zone-list">
+            <li class="zone-item"><a class="zone-item-link" href="javaScript:;">限免专区</a></li>
+            <li class="zone-item"><a class="zone-item-link" href="javaScript:;">视频课</a></li>
+            <li class="zone-item"><a class="zone-item-link" href="javaScript:;">实战营</a></li>
+            <li class="zone-item"><a class="zone-item-link" href="javaScript:;">练功房</a></li>
+            <li class="zone-item"><a class="zone-item-link" href="javaScript:;">专题课</a></li>
+            <li class="zone-item talent"><a class="zone-item-link" href="javaScript:;">企业人才云</a></li>
+          </ul>
+          <ul class="header-link-list">
+            <li class="link-item member">
+              <a class="link-item-link" href="javascript:;">
+                会员
+              </a>
+            </li>
+            <li class="link-item packet">
+              <a class="link-item-link" href="javaScript:;">
+                <img class="link-item-img" src="./img/hongbao.png" alt="">
+                <span>邀请红包</span>
+              </a>
+            </li>
+            <li class="link-item community">
+              <a class="link-item-link" href="javaScript:;">
+                <span>极客百万社区</span>
+                <img class="link-item-img" src="./img/airplane.jpeg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </header>
+
+  <page-body>
+    <div class="banner-section">
+      <div class="banner-carosel">
+        <a href="javascript" class="carosel-link">
+          <img class="carosel-link-img" src="./img/banner-ai.png" alt="">
+        </a>
+        <a class="carousel-indicators" href="javascript:;">
+          <i class="indicator-item active"></i>
+          <i class="indicator-item"></i>
+        </a>
+      </div>
+      <div class="banner-content">
+        <!-- banner的menu的列表，包含了多个技术方向 -->
+        <ul class="banner-menu-list">
+          <li class="banner-menu-item font-abs">
+            <div class="menu-item-nav">
+              <span class="banner-item-name">前端开发</span>
+            </div>
+            <!-- 弹出层：menu的item的列表，包含了该技术方向多个板块 -->
+            <div class="menu-item-list">
+              <i class="menu-item-bg-wrap"></i>
+              <ul class="menu-catalog-list">
+                <li class="menu-catalog-dl">
+                  <div class="menu-catalog-dt">前端基础</div>
+                  <!-- 某个板块下多个技术栈 -->
+                  <div class="menu-catalog-dd-list">
+                    <div class="menu-catalog-dd">HTML</div>
+                    <div class="menu-catalog-dd">CSS</div>
+                    <div class="menu-catalog-dd">JavaScript</div>
+                  </div>
+                </li>
+                <li class="menu-catalog-dl">
+                  <div class="menu-catalog-dt">前端框架</div>
+                  <div class="menu-catalog-dd-list">
+                    <div class="menu-catalog-dd">JQuery</div>
+                    <div class="menu-catalog-dd">React</div>
+                    <div class="menu-catalog-dd">Vue.js</div>
+                    <div class="menu-catalog-dd">MVVM</div>
+                    <div class="menu-catalog-dd">Weui</div>
+                    <div class="menu-catalog-dd">BootStrap</div>
+                    <div class="menu-catalog-dd">Angluar</div>
+                    <div class="menu-catalog-dd">Node.js</div>
+                  </div>
+                </li>
+                <li class="menu-catalog-dl">
+                  <div class="menu-catalog-dt">前端进阶</div>
+                  <div class="menu-catalog-dd-list">
+                    <div class="menu-catalog-dd">JSON</div>
+                    <div class="menu-catalog-dd">TypeScript</div>
+                    <div class="menu-catalog-dd">Canvas</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="banner-menu-item font-abs">
+            <div class="menu-item-nav">
+              <span class="banner-item-name">移动端开发</span>
+            </div>
+            <div class="menu-item-list">
+              <i class="menu-item-bg-wrap"></i>
+              <ul class="menu-catalog-list">
+                <li class="menu-catalog-dl">
+                  <div class="menu-catalog-dt">应用开发</div>
+                  <div class="menu-catalog-dd-list">
+                    <div class="menu-catalog-dd">Android</div>
+                    <div class="menu-catalog-dd">iOS</div>
+                    <div class="menu-catalog-dd">微信小程序</div>
+                    <div class="menu-catalog-dd">支付宝小程序</div>
+                  </div>
+                </li>
+                <li class="menu-catalog-dl">
+                  <div class="menu-catalog-dt">常用框架</div>
+                  <div class="menu-catalog-dd-list">
+                    <div class="menu-catalog-dd">ReactNative</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="banner-menu-item font-abs">
+            <div class="menu-item-nav">
+              <span class="banner-item-name">后端开发</span>
+            </div>
+            <div class="menu-item-list">
+              <i class="menu-item-bg-wrap"></i>
+              <ul class="menu-catalog-list">
+                <li class="menu-catalog-dl">
+                  <div class="menu-catalog-dt">后端开发</div>
+                  <div class="menu-catalog-dd-list">
+                    <div class="menu-catalog-dd">Java</div>
+                    <div class="menu-catalog-dd">Python</div>
+                    <div class="menu-catalog-dd">PHP</div>
+                    <div class="menu-catalog-dd">Go</div>
+                    <div class="menu-catalog-dd">C</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="banner-menu-item font-abs">
+            <div class="menu-item-nav">
+              <span class="banner-item-name">大数据</span>
+            </div>
+            <div class="menu-item-list">
+              <i class="menu-item-bg-wrap"></i>
+              <ul class="menu-catalog-list">
+                <li class="menu-catalog-dl">
+                  <div class="menu-catalog-dt">数据开发</div>
+                  <div class="menu-catalog-dd-list">
+                    <div class="menu-catalog-dd">Kafka</div>
+                    <div class="menu-catalog-dd">Spark</div>
+                    <div class="menu-catalog-dd">Hive</div>
+                    <div class="menu-catalog-dd">Zookeeper</div>
+                    <div class="menu-catalog-dd">Storm</div>
+                    <div class="menu-catalog-dd">HBase</div>
+                    <div class="menu-catalog-dd">MySQL</div>
+                    <div class="menu-catalog-dd">Git</div>
+                    <div class="menu-catalog-dd">Linux</div>
+                    <div class="menu-catalog-dd">Go</div>
+                  </div>
+                </li>
+                <li class="menu-catalog-dl">
+                  <div class="menu-catalog-dt">数据分析</div>
+                  <div class="menu-catalog-dd-list">
+                    <div class="menu-catalog-dd">数据处理</div>
+                    <div class="menu-catalog-dd">Echatrs</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="banner-menu-item font-abs">
+            <div class="menu-item-nav">
+              <span class="banner-item-name">人工智能</span>
+            </div>
+            <div class="menu-item-list">
+              <i class="menu-item-bg-wrap"></i>
+              <ul class="menu-catalog-list">
+                <li class="menu-catalog-dl">
+                  <div class="menu-catalog-dt">AI</div>
+                  <div class="menu-catalog-dd-list">
+                    <div class="menu-catalog-dd">AI</div>
+                    <div class="menu-catalog-dd">机器学习</div>
+                    <div class="menu-catalog-dd">算法</div>
+                    <div class="menu-catalog-dd">神经学</div>
+                    <div class="menu-catalog-dd">高通</div>
+                    <div class="menu-catalog-dd">框架</div>
+                  </div>
+                </li>
+                <li class="menu-catalog-dl">
+                  <div class="menu-catalog-dt">框架</div>
+                  <div class="menu-catalog-dd-list">
+                    <div class="menu-catalog-dd">Keras</div>
+                    <div class="menu-catalog-dd">Caffe</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="banner-menu-item font-abs">
+            <div class="menu-item-nav">
+              <span class="banner-item-name">云计算</span>
+            </div>
+            <div class="menu-item-list">
+              <i class="menu-item-bg-wrap"></i>
+              <ul class="menu-catalog-list">
+                <li class="menu-catalog-dl">
+                  <div class="menu-catalog-dt">云计算</div>
+                  <div class="menu-catalog-dd-list">
+                    <div class="menu-catalog-dd">AWS</div>
+                    <div class="menu-catalog-dd">腾讯云</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="banner-menu-item font-abs">
+            <div class="menu-item-nav">
+              <span class="banner-item-name">区块链/物联网</span>
+            </div>
+            <div class="menu-item-list">
+              <i class="menu-item-bg-wrap"></i>
+              <ul class="menu-catalog-list">
+                <li class="menu-catalog-dl">
+                  <div class="menu-catalog-dt">物联网</div>
+                  <div class="menu-catalog-dd-list">
+                    <div class="menu-catalog-dd">物联网</div>
+                  </div>
+                </li>
+                <li class="menu-catalog-dl">
+                  <div class="menu-catalog-dt">区块链</div>
+                  <div class="menu-catalog-dd-list">
+                    <div class="menu-catalog-dd">区块链</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="banner-menu-item font-abs">
+            <div class="menu-item-nav">
+              <span class="banner-item-name">数据库</span>
+            </div>
+            <div class="menu-item-list">
+              <i class="menu-item-bg-wrap"></i>
+              <ul class="menu-catalog-list">
+                <li class="menu-catalog-dl">
+                  <div class="menu-catalog-dt">SQL</div>
+                  <div class="menu-catalog-dd-list">
+                    <div class="menu-catalog-dd">MySQL</div>
+                    <div class="menu-catalog-dd">Oracle</div>
+                    <div class="menu-catalog-dd">SQLite</div>
+                    <div class="menu-catalog-dd">SQL与大数据</div>
+                  </div>
+                </li>
+                <li class="menu-catalog-dl">
+                  <div class="menu-catalog-dt">NoSQL</div>
+                  <div class="menu-catalog-dd-list">
+                    <div class="menu-catalog-dd">Redis</div>
+                    <div class="menu-catalog-dd">HBase</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="banner-menu-item font-abs">
+            <div class="menu-item-nav">
+              <span class="banner-item-name">产品/设计</span>
+            </div>
+            <div class="menu-item-list">
+              <i class="menu-item-bg-wrap"></i>
+              <ul class="menu-catalog-list">
+                <li class="menu-catalog-dl">
+                  <div class="menu-catalog-dt">产品</div>
+                  <div class="menu-catalog-dd-list">
+                    <div class="menu-catalog-dd">产品经理</div>
+                    <div class="menu-catalog-dd">原型分析</div>
+                    <div class="menu-catalog-dd">Axure</div>
+                  </div>
+                </li>
+                <li class="menu-catalog-dl">
+                  <div class="menu-catalog-dt">设计</div>
+                  <div class="menu-catalog-dd-list">
+                    <div class="menu-catalog-dd">PhotoShop</div>
+                    <div class="menu-catalog-dd">Illustrator</div>
+                    <div class="menu-catalog-dd">特效设计</div>
+                    <div class="menu-catalog-dd">界面设计</div>
+                    <div class="menu-catalog-dd">网页设计</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div class="banner-board">
+          <a class="board-link" href="javascript">
+            <img class="board-link-img" src="./img/board.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="stack-section">
+      <div class="stack-section-container">
+        <ul class="stack-technology-list">
+          <li class="stack-technology-item">
+            <img class="stack-item-cover" src="./img/stack-git.png" alt="">
+          </li>
+          <li class="stack-technology-item">
+            <img class="stack-item-cover" src="./img/stack-vue.png" alt="">
+          </li>
+          <li class="stack-technology-item">
+            <img class="stack-item-cover" src="./img/stack-kafka.png" alt="">
+          </li>
+          <li class="stack-technology-item">
+            <img class="stack-item-cover" src="./img/stack-zookeeper.png" alt="">
+          </li>
+          <li class="stack-technology-item">
+            <img class="stack-item-cover" src="./img/stack-redis.png" alt="">
+          </li>
+          <li class="stack-technology-item">
+            <img class="stack-item-cover" src="./img/stack-yunying.png" alt="">
+          </li>
+        </ul>
+        <ul class="stack-group-list">
+          <li class="stack-group-item jiker">
+            <img class="stack-group-cover" src="./img/group-jiker.svg" alt="">
+            <p class="stack-group-tip">
+              <span class="group-tip-text font-abs">现在扫码 Being Jiker</span>
+              <img class="group-tip-qrcode" src="./img/qrcode_jiker.png" alt="">
+            </p>
+          </li>
+          <li class="stack-group-item feishu">
+            <img class="stack-group-cover" src="./img/group-feishu.png" alt="">
+            <p class="stack-group-tip">
+              <span class="group-tip-text font-abs">扫码加入极客百万社区</span>
+              <img class="group-tip-qrcode" src="./img/qrcode_jiker.png" alt="">
+            </p>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="panel-section">
+      <div class="panel-web">
+        <a class="panel-item-link" href="javascript:;">
+          <img class="panel-item-img" src="./img/panel-web.png" alt="">
+        </a>
+      </div>
+      <ul class="panel-list">
+        <li class="panel-item free">
+          <a class="panel-item-link" href="javascript:;">
+            <img class="panel-item-img" src="./img/panel-free.png" alt="">
+          </a>
+        </li>
+        <li class="panel-item python">
+          <a class="panel-item-link" href="javascript:;">
+            <img class="panel-item-img" src="./img/panel-python.png" alt="">
+          </a>
+        </li>
+        <li class="panel-item beginner">
+          <a class="panel-item-link" href="javascript:;">
+            <img class="panel-item-img" src="./img/panel-beginner.png" alt="">
+          </a>
+        </li>
+        <li class="panel-item vip">
+          <a class="panel-item-link" href="javascript:;">
+            <img class="panel-item-img" src="./img/panel-vip.png" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="papar-section">
+      <div class="papar-container"></div>
+    </div>
+
+    <div class="campus-section">
+      <div class="campus-hot">
+        <p class="campus-hot-header">
+          <span class="campus-topic font-topic">热门实战营</span>
+          <span class="campus-desc font-desc icon-more">学习的捷径就是名师带路，手把手辅导，扎实掌握，光速提升</span>
+
+        </p>
+
+        <div class="campus-hot-container">
+          <a href="javascript::" class="campus-hot-item data">
+            <img class="campus-hot-cover" src="./img/campus-data.png" alt="">
+            <div class="campus-hot-content">
+              <p class="hot-content-time">
+                <i class="hot-content-time__icon"></i>
+                <span class="hot-content-time__countdown font-time">30天</span>
+                <span class="separate font-abs">…</span>
+                <span class="hot-content-time__date font-time">开营日期 2020-02-27</span>
+              </p>
+              <p class="hot-content-desc font-content">30天，循序渐进，从0基础到初级数据分析师</p>
+              <p class="hot-content-type">
+                <i class="hot-type-icon"></i>
+                <span class="hot-type-name">数据分析师</span>
+              </p>
+            </div>
+          </a>
+          <a href="javascript::" class="campus-hot-item rebuild">
+            <img class="campus-hot-cover" src="./img/campus-rebuild.png" alt="">
+            <div class="campus-hot-content">
+              <p class="hot-content-time">
+                <i class="hot-content-time__icon"></i>
+                <span class="hot-content-time__countdown font-time">28天</span>
+                <span class="separate font-abs">…</span>
+                <span class="hot-content-time__date font-time">开营日期 2020-01-16</span>
+              </p>
+              <p class="hot-content-desc font-content">通过刻意训练，掌握重构方法，使程序设计模式和架构更趋合理，训练学员能够快速写出整洁、高质量的代码。</p>
+              <p class="hot-content-type">
+                <i class="hot-type-icon"></i>
+                <span class="hot-type-name">通用能力</span>
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="campus-career">
+        <p class="campus-career-header">
+          <span class="campus-topic font-topic">职业路径</span>
+          <span class="campus-desc font-desc icon-more">成为一名程序员的最短学习路径，升级打怪，技能UP</span>
+        </p>
+        <div class="campus-career-list">
+          <a class="campus-career-item" href="javascript:;">
+            <img class="campus-career-item__img" src="./img/career-python.png" alt="">
+          </a>
+          <a class="campus-career-item" href="javascript:;">
+            <img class="campus-career-item__img" src="./img/career-data.png" alt="">
+          </a>
+          <a class="campus-career-item" href="javascript:;">
+            <img class="campus-career-item__img" src="./img/career-web.png" alt="">
+          </a>
+          <a class="campus-career-item" href="javascript:;">
+            <img class="campus-career-item__img" src="./img/career-java.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="course-section">
+      <div class="course-header">
+        <div class="course-topic font-topic">视频课程</div>
+        <div class="campus-desc font-desc">
+          <a class="campus-desc--item" href="javascript:;">人工智能</a>
+          <span class="campus-desc--line">/</span>
+          <a class="campus-desc--item" href="javascript:;">大数据</a>
+          <span class="campus-desc--line">/</span>
+          <a class="campus-desc--item" href="javascript:;">云计算</a>
+          <span class="campus-desc--line">/</span>
+          <a class="campus-desc--item" href="javascript:;">区块链/物联网</a>
+          <span class="campus-desc--line">/</span>
+          <a class="campus-desc--item" href="javascript:;">后端开发</a>
+          <span class="campus-desc--line">/</span>
+          <a class="campus-desc--item" href="javascript:;">移动端开发</a>
+          <span class="campus-desc--line">/</span>
+          <a class="campus-desc--item" href="javascript:;">产品/设计</a>
+          <span class="campus-desc--line">/</span>
+          <a class="campus-desc--item" href="javascript:;">前端开发</a>
+          <span class="campus-desc--line">/</span>
+          <a class="campus-desc--item" href="javascript:;">数据库</a>
+        </div>
+        <div class="campus-total">
+          <span class="campus-total--item font-desc">全部课程</span>
+          <i class="campus-total--icon icon-more"></i>
+        </div>
+      </div>
+
+      <div class="course-list">
+        <a class="course-item safe" href="javascript:;">
+          <div class="card-course">
+            <div class="course-item-cover">
+              <div class="cover-img"></div>
+              <span class="card-course-tag status">最新</span>
+              <span class="card-course-tag card-course-level card-course-level2"></span>
+              <div class="card-course-category">
+                <div class="course-category-item"></div>
+              </div>
+            </div>
+            <div class="course-item-content">
+              <div class="card-course-title">安全渗透测试</div>
+              <div class="card-course-describe font-content">本课程是一本可帮助您入门和运行网络安全事业的完整指南。</div>
+              <div class="card-course-info">
+                <i class="time-gray-icon"></i>
+                <span class="card-course-info-time font-course">10.7小时</span>
+                <span class="separate font-abs">…</span>
+                <span class="card-course-info-count font-course">111课时</span>
+                <span class="separate font-abs">…</span>
+                <span class="card-course-info-study font-course">432人已学习</span>
+              </div>
+              <div class="card-course-price">
+                <i class="card-course-price-label">￥</i>
+                <span class="card-course-price-current">1</span>
+                <span class="card-course-price-original">￥399</span>
+              </div>
+              <div class="card-course-price card-course-hover">
+                <div class="card-course-price-vip-free">
+                  <span class="card-course-price-vip-label">VIP</span>
+                  免费学
+                </div>
+                <button class="theme-dark-mini-btn">
+                  立即学习
+                  <i class="link-white-arrow"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a class="course-item kotlin">
+          <div class="card-course">
+            <div class="course-item-cover">
+              <div class="cover-img"></div>
+              <span class="card-course-tag status">最新</span>
+              <span class="card-course-tag card-course-level card-course-level1"></span>
+              <div class="card-course-category">
+                <div class="course-category-item"></div>
+              </div>
+            </div>
+            <div class="course-item-content">
+              <div class="card-course-title">Kotlin完全指南</div>
+              <div class="card-course-describe font-content"> Kotlin被设计为一种工业级的面向对象的语言，并且</div>
+              <div class="card-course-info">
+                <i class="time-gray-icon"></i>
+                <span class="card-course-info-time font-course">4.2小时</span>
+                <span class="separate font-abs">…</span>
+                <span class="card-course-info-count font-course">31课时</span>
+                <span class="separate font-abs">…</span>
+                <span class="card-course-info-study font-course">327人已学习</span>
+              </div>
+              <div class="card-course-price">
+                <i class="card-course-price-label">￥</i>
+                <span class="card-course-price-current">198</span>
+                <span class="card-course-price-original">￥298</span>
+              </div>
+              <div class="card-course-price card-course-hover">
+                <div class="card-course-price-vip-free">
+                  <span class="card-course-price-vip-label">VIP</span>
+                  免费学
+                </div>
+                <button class="theme-dark-mini-btn">
+                  立即学习
+                  <i class="link-white-arrow"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="course-item neural-network">
+          <div class="card-course">
+            <div class="course-item-cover">
+              <div class="cover-img"></div>
+              <span class="card-course-tag card-course-level card-course-level2"></span>
+              <div class="card-course-category">
+                <div class="course-category-item">神经学</div>
+              </div>
+            </div>
+            <div class="course-item-content">
+              <div class="card-course-title">神经网络与深度学习</div>
+              <div class="card-course-describe font-content">神经网络是一门重要的机器学习技术。它是目</div>
+              <div class="card-course-info">
+                <i class="time-gray-icon"></i>
+                <span class="card-course-info-time font-course">2.9小时</span>
+                <span class="separate font-abs">…</span>
+                <span class="card-course-info-count font-course">15课时</span>
+                <span class="separate font-abs">…</span>
+                <span class="card-course-info-study font-course">497人已学习</span>
+              </div>
+              <div class="card-course-price">
+                <i class="card-course-price-label">￥</i>
+                <span class="card-course-price-current">39</span>
+                <span class="card-course-price-original">￥99</span>
+              </div>
+              <div class="card-course-price card-course-hover">
+                <div class="card-course-price-vip-free">
+                  <span class="card-course-price-vip-label">VIP</span>
+                  免费学
+                </div>
+                <button class="theme-dark-mini-btn">
+                  立即学习
+                  <i class="link-white-arrow"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="course-item git">
+          <div class="card-course">
+            <div class="course-item-cover">
+              <div class="cover-img"></div>
+              <span class="card-course-tag status">推荐</span>
+              <span class="card-course-tag card-course-level card-course-level3"></span>
+              <div class="card-course-category">
+                <div class="course-category-item">Git</div>
+                <div class="course-category-item">Java</div>
+              </div>
+            </div>
+            <div class="course-item-content">
+              <div class="card-course-title">版本工具之Git/GitHub——从业必备</div>
+              <div class="card-course-describe font-content">依托GitHub社区讲解分布式版本控制工具的使用,课</div>
+              <div class="card-course-info">
+                <i class="time-gray-icon"></i>
+                <span class="card-course-info-time font-course">1.2小时</span>
+                <span class="separate font-abs">…</span>
+                <span class="card-course-info-count font-course">15课时</span>
+                <span class="separate font-abs">…</span>
+                <span class="card-course-info-study font-course">1926人已学习</span>
+              </div>
+              <div class="card-course-price">
+                <i class="card-course-price-label"></i>
+                <span class="card-course-price-current"></span>
+                <span class="card-course-price-original"></span>
+              </div>
+              <div class="card-course-price card-course-hover">
+                <div class="card-course-price-vip-free">
+                  <span class="card-course-price-vip-label">VIP</span>
+                  免费学
+                </div>
+                <button class="theme-dark-mini-btn">
+                  立即学习
+                  <i class="link-white-arrow"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="course-item community">
+          <div class="card-course">
+            <div class="course-item-cover">
+              <div class="cover-img"></div>
+              <span class="card-course-tag status">最新</span>
+              <span class="card-course-tag card-course-level card-course-level2"></span>
+              <div class="card-course-category">
+                <div class="course-category-item">Node.js</div>
+                <div class="course-category-item">HTML</div>
+                <div class="course-category-item">CSS</div>
+              </div>
+            </div>
+            <div class="course-item-content">
+              <div class="card-course-title">安全渗透测试</div>
+              <div class="card-course-describe font-content">本课程是一本可帮助您入门和运行网络安全事业的完整指南。</div>
+              <div class="card-course-info">
+                <i class="time-gray-icon"></i>
+                <span class="card-course-info-time font-course">10.7小时</span>
+                <span class="separate font-abs">…</span>
+                <span class="card-course-info-count font-course">111课时</span>
+                <span class="separate font-abs">…</span>
+                <span class="card-course-info-study font-course">432人已学习</span>
+              </div>
+              <div class="card-course-price">
+                <i class="card-course-price-label">￥</i>
+                <span class="card-course-price-current">1</span>
+                <span class="card-course-price-original">￥399</span>
+              </div>
+              <div class="card-course-price card-course-hover">
+                <div class="card-course-price-vip-free">
+                  <span class="card-course-price-vip-label">VIP</span>
+                  免费学
+                </div>
+                <button class="theme-dark-mini-btn">
+                  立即学习
+                  <i class="link-white-arrow"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="course-item w3c">
+          <div class="card-course">
+            <div class="course-item-cover">
+              <div class="cover-img"></div>
+              <span class="card-course-tag status">最新</span>
+              <span class="card-course-tag card-course-level card-course-level2"></span>
+              <div class="card-course-category">
+                <div class="course-category-item">Node.js</div>
+                <div class="course-category-item">HTML</div>
+                <div class="course-category-item">CSS</div>
+              </div>
+            </div>
+            <div class="course-item-content">
+              <div class="card-course-title">安全渗透测试</div>
+              <div class="card-course-describe font-content">本课程是一本可帮助您入门和运行网络安全事业的完整指南。</div>
+              <div class="card-course-info">
+                <i class="time-gray-icon"></i>
+                <span class="card-course-info-time font-course">10.7小时</span>
+                <span class="separate font-abs">…</span>
+                <span class="card-course-info-count font-course">111课时</span>
+                <span class="separate font-abs">…</span>
+                <span class="card-course-info-study font-course">432人已学习</span>
+              </div>
+              <div class="card-course-price">
+                <i class="card-course-price-label">￥</i>
+                <span class="card-course-price-current">1</span>
+                <span class="card-course-price-original">￥399</span>
+              </div>
+              <div class="card-course-price card-course-hover">
+                <div class="card-course-price-vip-free">
+                  <span class="card-course-price-vip-label">VIP</span>
+                  免费学
+                </div>
+                <button class="theme-dark-mini-btn">
+                  立即学习
+                  <i class="link-white-arrow"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="course-item javaapi">
+          <div class="card-course">
+            <div class="course-item-cover">
+              <div class="cover-img"></div>
+              <span class="card-course-tag status">最新</span>
+              <span class="card-course-tag card-course-level card-course-level2"></span>
+              <div class="card-course-category">
+                <div class="course-category-item">Node.js</div>
+                <div class="course-category-item">HTML</div>
+                <div class="course-category-item">CSS</div>
+              </div>
+            </div>
+            <div class="course-item-content">
+              <div class="card-course-title">安全渗透测试</div>
+              <div class="card-course-describe font-content">本课程是一本可帮助您入门和运行网络安全事业的完整指南。</div>
+              <div class="card-course-info">
+                <i class="time-gray-icon"></i>
+                <span class="card-course-info-time font-course">10.7小时</span>
+                <span class="separate font-abs">…</span>
+                <span class="card-course-info-count font-course">111课时</span>
+                <span class="separate font-abs">…</span>
+                <span class="card-course-info-study font-course">432人已学习</span>
+              </div>
+              <div class="card-course-price">
+                <i class="card-course-price-label">￥</i>
+                <span class="card-course-price-current">1</span>
+                <span class="card-course-price-original">￥399</span>
+              </div>
+              <div class="card-course-price card-course-hover">
+                <div class="card-course-price-vip-free">
+                  <span class="card-course-price-vip-label">VIP</span>
+                  免费学
+                </div>
+                <button class="theme-dark-mini-btn">
+                  立即学习
+                  <i class="link-white-arrow"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="course-item java-framework">
+          <div class="card-course">
+            <div class="course-item-cover">
+              <div class="cover-img"></div>
+              <span class="card-course-tag status">最新</span>
+              <span class="card-course-tag card-course-level card-course-level2"></span>
+              <div class="card-course-category">
+                <div class="course-category-item">Node.js</div>
+                <div class="course-category-item">HTML</div>
+                <div class="course-category-item">CSS</div>
+              </div>
+            </div>
+            <div class="course-item-content">
+              <div class="card-course-title">安全渗透测试</div>
+              <div class="card-course-describe font-content">本课程是一本可帮助您入门和运行网络安全事业的完整指南。</div>
+              <div class="card-course-info">
+                <i class="time-gray-icon"></i>
+                <span class="card-course-info-time font-course">10.7小时</span>
+                <span class="separate font-abs">…</span>
+                <span class="card-course-info-count font-course">111课时</span>
+                <span class="separate font-abs">…</span>
+                <span class="card-course-info-study font-course">432人已学习</span>
+              </div>
+              <div class="card-course-price">
+                <i class="card-course-price-label">￥</i>
+                <span class="card-course-price-current">1</span>
+                <span class="card-course-price-original">￥399</span>
+              </div>
+              <div class="card-course-price card-course-hover">
+                <div class="card-course-price-vip-free">
+                  <span class="card-course-price-vip-label">VIP</span>
+                  免费学
+                </div>
+                <button class="theme-dark-mini-btn">
+                  立即学习
+                  <i class="link-white-arrow"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="course-item webpack">
+          <div class="card-course">
+            <div class="course-item-cover">
+              <div class="cover-img"></div>
+              <span class="card-course-tag status">最新</span>
+              <span class="card-course-tag card-course-level card-course-level2"></span>
+              <div class="card-course-category">
+                <div class="course-category-item">Node.js</div>
+                <div class="course-category-item">HTML</div>
+                <div class="course-category-item">CSS</div>
+              </div>
+            </div>
+            <div class="course-item-content">
+              <div class="card-course-title">安全渗透测试</div>
+              <div class="card-course-describe font-content">本课程是一本可帮助您入门和运行网络安全事业的完整指南。</div>
+              <div class="card-course-info">
+                <i class="time-gray-icon"></i>
+                <span class="card-course-info-time font-course">10.7小时</span>
+                <span class="separate font-abs">…</span>
+                <span class="card-course-info-count font-course">111课时</span>
+                <span class="separate font-abs">…</span>
+                <span class="card-course-info-study font-course">432人已学习</span>
+              </div>
+              <div class="card-course-price">
+                <i class="card-course-price-label">￥</i>
+                <span class="card-course-price-current">1</span>
+                <span class="card-course-price-original">￥399</span>
+              </div>
+              <div class="card-course-price card-course-hover">
+                <div class="card-course-price-vip-free">
+                  <span class="card-course-price-vip-label">VIP</span>
+                  免费学
+                </div>
+                <button class="theme-dark-mini-btn">
+                  立即学习
+                  <i class="link-white-arrow"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="course-item javascript2">
+          <div class="card-course">
+            <div class="course-item-cover">
+              <div class="cover-img"></div>
+              <span class="card-course-tag status">最新</span>
+              <span class="card-course-tag card-course-level card-course-level2"></span>
+              <div class="card-course-category">
+                <div class="course-category-item">Node.js</div>
+                <div class="course-category-item">HTML</div>
+                <div class="course-category-item">CSS</div>
+              </div>
+            </div>
+            <div class="course-item-content">
+              <div class="card-course-title">安全渗透测试</div>
+              <div class="card-course-describe font-content">本课程是一本可帮助您入门和运行网络安全事业的完整指南。</div>
+              <div class="card-course-info">
+                <i class="time-gray-icon"></i>
+                <span class="card-course-info-time font-course">10.7小时</span>
+                <span class="separate font-abs">…</span>
+                <span class="card-course-info-count font-course">111课时</span>
+                <span class="separate font-abs">…</span>
+                <span class="card-course-info-study font-course">432人已学习</span>
+              </div>
+              <div class="card-course-price">
+                <i class="card-course-price-label">￥</i>
+                <span class="card-course-price-current">1</span>
+                <span class="card-course-price-original">￥399</span>
+              </div>
+              <div class="card-course-price card-course-hover">
+                <div class="card-course-price-vip-free">
+                  <span class="card-course-price-vip-label">VIP</span>
+                  免费学
+                </div>
+                <button class="theme-dark-mini-btn">
+                  立即学习
+                  <i class="link-white-arrow"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="course-item cssengineering">
+          <div class="card-course">
+            <div class="course-item-cover">
+              <div class="cover-img"></div>
+              <span class="card-course-tag status">最新</span>
+              <span class="card-course-tag card-course-level card-course-level2"></span>
+              <div class="card-course-category">
+                <div class="course-category-item">Node.js</div>
+                <div class="course-category-item">HTML</div>
+                <div class="course-category-item">CSS</div>
+              </div>
+            </div>
+            <div class="course-item-content">
+              <div class="card-course-title">安全渗透测试</div>
+              <div class="card-course-describe font-content">本课程是一本可帮助您入门和运行网络安全事业的完整指南。</div>
+              <div class="card-course-info">
+                <i class="time-gray-icon"></i>
+                <span class="card-course-info-time font-course">10.7小时</span>
+                <span class="separate font-abs">…</span>
+                <span class="card-course-info-count font-course">111课时</span>
+                <span class="separate font-abs">…</span>
+                <span class="card-course-info-study font-course">432人已学习</span>
+              </div>
+              <div class="card-course-price">
+                <i class="card-course-price-label">￥</i>
+                <span class="card-course-price-current">1</span>
+                <span class="card-course-price-original">￥399</span>
+              </div>
+              <div class="card-course-price card-course-hover">
+                <div class="card-course-price-vip-free">
+                  <span class="card-course-price-vip-label">VIP</span>
+                  免费学
+                </div>
+                <button class="theme-dark-mini-btn">
+                  立即学习
+                  <i class="link-white-arrow"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </a>
+        <a class="course-item clang">
+          <div class="card-course">
+            <div class="course-item-cover">
+              <div class="cover-img"></div>
+              <span class="card-course-tag status">最新</span>
+              <span class="card-course-tag card-course-level card-course-level2"></span>
+              <div class="card-course-category">
+                <div class="course-category-item">Node.js</div>
+                <div class="course-category-item">HTML</div>
+                <div class="course-category-item">CSS</div>
+              </div>
+            </div>
+            <div class="course-item-content">
+              <div class="card-course-title">安全渗透测试</div>
+              <div class="card-course-describe font-content">本课程是一本可帮助您入门和运行网络安全事业的完整指南。</div>
+              <div class="card-course-info">
+                <i class="time-gray-icon"></i>
+                <span class="card-course-info-time font-course">10.7小时</span>
+                <span class="separate font-abs">…</span>
+                <span class="card-course-info-count font-course">111课时</span>
+                <span class="separate font-abs">…</span>
+                <span class="card-course-info-study font-course">432人已学习</span>
+              </div>
+              <div class="card-course-price">
+                <i class="card-course-price-label">￥</i>
+                <span class="card-course-price-current">1</span>
+                <span class="card-course-price-original">￥399</span>
+              </div>
+              <div class="card-course-price card-course-hover">
+                <div class="card-course-price-vip-free">
+                  <span class="card-course-price-vip-label">VIP</span>
+                  免费学
+                </div>
+                <button class="theme-dark-mini-btn">
+                  立即学习
+                  <i class="link-white-arrow"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="campus-total vertical-bottom">
+        <span class="campus-total--item font-desc">全部课程</span>
+        <i class="campus-total--icon icon-more"></i>
+      </div>
+    </div>
+  </page-body>
+  
+  <footer class="page-footer">
+    <div class="footer-container">
+      <div class="footer-vertical_top">
+        <div class="logo-container">
+          <a class="logo-img" href="javascript:;"></a>
+          <div class="logo-desc">面向未来的技术人才教育</div>
+          <div class="contact-container">
+            <div class="contact-title">客服电话</div>
+            <div class="contact-number">010-86468343</div>
+            <button class="contact-btn footer-btn">联系我们</button>
+          </div>
+        </div>
+        <div class="nav-container">
+          <div class="nav-list">
+            <div class="nav-title">课程</div>
+            <div class="nav-item">实战营</div>
+            <div class="nav-item">视频课</div>
+          </div>
+          <div class="nav-list">
+            <div class="nav-title">职业</div>
+            <div class="nav-item">个性定制</div>
+          </div>
+          <div class="nav-list">
+            <div class="nav-title">关于</div>
+            <div class="nav-item">关于极客</div>
+            <div class="nav-item">加入我们</div>
+          </div>
+          <div class="nav-list">
+            <div class="nav-title">合作</div>
+            <div class="nav-item">企业合作</div>
+            <div class="nav-item">讲师合作</div>
+          </div>
+          <div class="nav-list">
+            <div class="nav-title">支持</div>
+            <div class="nav-item">常见问题</div>
+            <div class="nav-item">意见反馈</div>
+          </div>
+        </div>
+        <div class="cooperate-container">
+          <div class="footer-sub-title">服务与合作</div>
+          <div class="cooperate-logos">
+            <img class="service-item" src="./img/logo-mircrosoft.png" alt="">
+            <img class="service-item" src="./img/logo-tencent-cloud.png" alt="">
+            <img class="service-item" src="./img/logo-qualo.png" alt="">
+            <img class="service-item" src="./img/logo-turing.png" alt="">
+            <img class="service-item" src="./img/logo-chukong.png" alt="">
+            <img class="service-item" src="./img/logo-sensors.png" alt="">
+            <img class="service-item" src="./img/logo-amd.png" alt="">
+            <img class="service-item" src="./img/logo-juhe.png" alt="">
+            <img class="service-item" src="./img/logo-qingcloud.png" alt="">
+            <img class="service-item" src="./img/logo-bugly.png" alt="">
+            <img class="service-item" src="./img/logo-baidu-connect.png" alt="">
+            <img class="service-item" src="./img/logo-tetin.png" alt="">
+            <img class="service-item" src="./img/logo-iflytek.png" alt="">
+          </div>
+        </div>
+        <div class="serve-container">
+          <div class="footer-sub-title">服务与合作</div>
+          <button class="serve-button footer-btn">
+            <i class="enterprise-icon icon"></i>
+            企业人才云
+          </button>
+          <div class="serve-desc">成熟方案提高技术团队开发效率</div>
+          <button class="serve-button footer-btn">
+            <i class="school-icon icon"></i>
+            高校学习云
+          </button>
+          <div class="serve-desc">引进企业项目助力新工科</div>
+        </div>
+      </div>
+      <div class="footer-vertical_bottom">
+        <div class="social-container">
+          <a class="icon sina-icon" href="javascript:;"></a>
+          <a class="icon twitter-icon" href="javascript:;"></a>
+          <a class="icon github-icon" href="javascript:;"></a>
+        </div>
+        <div class="copyright-container">
+          Copyright © 2013-2020 jiker.com All Rights Reserved.
+          <a class="copyright-link" href="javascipt:;">粤ICP备19154936号</a>
+          京公网安备11010802013056
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
+
 </html>
