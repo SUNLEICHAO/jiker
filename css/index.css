@@ -7,9 +7,10 @@ body {
   background-color: #f5f5f5;
 }
 
-.font-abs{
+.font-abs {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 }
+
 .font-topic {
   font-weight: 700;
   font-size: 26px;
@@ -56,9 +57,11 @@ a {
   color: #000;
   text-decoration: none;
 }
-.page-header{
+
+.page-header {
   background-color: #fff;
 }
+
 .header-container {
   display: flex;
   margin: auto;
@@ -147,7 +150,7 @@ a {
   cursor: pointer;
 }
 
-.header-top-search .search-btn:hover{
+.header-top-search .search-btn:hover {
   color: #fff;
   background-color: #0fc700;
 }
@@ -163,7 +166,7 @@ a {
   background-color: #1e1e1e;
 }
 
-.header-top-button .button-login:hover{
+.header-top-button .button-login:hover {
   opacity: .8;
 }
 
@@ -442,6 +445,7 @@ a {
 
 .stack-technology-item {
   display: flex;
+  cursor: pointer;
 }
 
 .stack-technology-item .stack-item-cover {
@@ -697,22 +701,32 @@ a {
 }
 
 .campus-desc--item,
-.campus-total--item {
+.top .campus-total--item {
   transition: color .4s ease;
 }
 
 .campus-desc--item:hover,
-.campus-total--item:hover {
+.top .campus-total--item:hover {
   color: #0fc700;
 }
 
-.vertical-bottom .campus-total--item{
+.campus-total.vertical-bottom {
+  cursor: pointer;
+}
+
+.campus-total.vertical-bottom:hover {
+  opacity: .8;
+}
+
+.vertical-bottom .campus-total--item {
   position: relative;
   /* 问题，这里的1px哪里差出来的 */
   top: 1px;
 }
 
-.campus-total--icon.icon-more::after{
+
+
+.campus-total--icon.icon-more::after {
   position: relative;
   top: 1px;
 }
@@ -733,7 +747,7 @@ a {
 }
 
 /* 卡片部分 */
-.course-list{
+.course-list {
   display: flex;
 
   flex-wrap: wrap;
@@ -741,6 +755,7 @@ a {
   align-content: space-between;
   height: 1137px;
 }
+
 .course-item {
   width: 295px;
   height: 359px;
@@ -852,13 +867,16 @@ a {
   white-space: nowrap;
   margin-bottom: 12px;
 }
-.card-course-info{
+
+.card-course-info {
   display: flex;
   align-items: center;
 }
-.card-course-info .separate{
+
+.card-course-info .separate {
   font-size: 13px;
 }
+
 .time-gray-icon {
   display: inline-block;
   width: 16px;
@@ -868,30 +886,37 @@ a {
   background-size: 16px;
 }
 
-.card-course-price{
+.card-course-price {
   margin-top: 10px;
   display: flex;
   height: 32px;
   align-items: flex-end;
 }
-.card-course-price.card-course-hover{
+
+.card-course-price {
   display: none;
 }
-.card-course-price-label{
+
+.card-course-price.card-course-hover {
+  display: block;
+}
+
+.card-course-price-label {
   font-size: 14px;
   line-height: 20px;
   color: #ff4000;
   font-weight: 500;
 }
 
-.card-course-price-current{
+.card-course-price-current {
   font-size: 24px;
   line-height: 24px;
   color: #ff4000;
   font-weight: 500;
   font-weight: 700;
 }
-.card-course-price-original{
+
+.card-course-price-original {
   color: #999;
   text-decoration: line-through;
   font-size: 14px;
@@ -901,7 +926,34 @@ a {
 
 }
 
-.campus-total.vertical-bottom{
+/* hover时候的样式设置 */
+.card-course-price.card-course-hover{
+  display: flex;
+  justify-content: space-between;
+}
+.card-course-price.card-course-hover .card-course-price-vip-free{
+  height: 25px;
+  padding: 0 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  line-height: 25px;
+  /* margin: 0 75px 0 auto; */
+  background-color: #eeedf0;
+}
+
+.card-course-price.card-course-hover .theme-dark-mini-btn{
+  width: 105px;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 16px;
+  font-size: 12px;
+  text-align: left;
+  border: none;
+}
+.link-white-arrow{
+  
+}
+.campus-total.vertical-bottom {
   width: 142px;
   height: 42px;
   border: 1px solid #999;
@@ -918,7 +970,7 @@ a {
   margin-top: 40px;
 }
 
-.footer-btn{
+.footer-btn {
   width: 144px;
   height: 43px;
   background-color: #333;
@@ -929,21 +981,24 @@ a {
   transition: .2s ease;
   border: none;
 }
+
 .footer-container {
   width: 1240px;
   height: 343px;
   margin: auto;
 }
-.footer-vertical_top{
+
+.footer-vertical_top {
   display: flex;
   padding-bottom: 34px;
   border-bottom: 1px solid #414141;
 }
 
-.page-footer .logo-container{
+.page-footer .logo-container {
   margin-right: 128px;
 }
-.page-footer .logo-img{
+
+.page-footer .logo-img {
   display: block;
   width: 156px;
   height: 70px;
@@ -952,7 +1007,7 @@ a {
   background-size: 156px 70px;
 }
 
-.logo-desc{
+.logo-desc {
   margin-bottom: 40px;
   font-size: 12px;
   letter-spacing: 2px;
@@ -960,7 +1015,8 @@ a {
   color: 12px;
   color: #bbb;
 }
-.contact-title{
+
+.contact-title {
   height: 22px;
   margin-bottom: 6px;
   line-height: 22px;
@@ -969,22 +1025,24 @@ a {
   color: #fff;
 }
 
-.contact-number{
+.contact-number {
   height: 28px;
   line-height: 28px;
   font-size: 20px;
   color: #d5d5d5;
   margin-bottom: 11px;
 }
-.nav-container{
+
+.nav-container {
   margin-right: 60px;
 }
-.nav-list{
+
+.nav-list {
   display: flex;
   margin-bottom: 20px;
 }
 
-.nav-list .nav-title{
+.nav-list .nav-title {
   height: 22px;
   line-height: 22px;
   font-size: 16px;
@@ -992,7 +1050,8 @@ a {
   color: #fff;
   margin-right: 20px;
 }
-.nav-list .nav-item{
+
+.nav-list .nav-item {
   height: 20px;
   margin-right: 12px;
   font-size: 14px;
@@ -1001,20 +1060,21 @@ a {
   color: #d5d5d5;
 }
 
-.cooperate-container{
+.cooperate-container {
   width: 383px;
   margin-right: 54px;
 }
 
-.cooperate-logos{
+.cooperate-logos {
   display: flex;
   flex-wrap: wrap;
 }
-.service-item{
+
+.service-item {
   margin-bottom: 5px;
 }
 
-.footer-sub-title{
+.footer-sub-title {
   font-size: 16px;
   line-height: 22px;
   margin-bottom: 10px;
@@ -1022,10 +1082,11 @@ a {
   color: #fff;
 }
 
-.serve-button{
+.serve-button {
   margin-bottom: 8px;
 }
-.serve-desc{
+
+.serve-desc {
   width: 144px;
   height: 34px;
   margin-bottom: 20px;
@@ -1035,7 +1096,7 @@ a {
 
 }
 
-.serve-container .icon{
+.serve-container .icon {
   position: relative;
   top: 2px;
   display: inline-block;
@@ -1044,28 +1105,32 @@ a {
   background-size: 18px 15px;
   margin-right: 6px;
 }
+
 .enterprise-icon {
   background-image: url(../img/icon_enterprise.svg);
 }
-.school-icon{
+
+.school-icon {
   background-image: url(../img//icon_school.svg);
 }
 
-.cooperate-logos .service-item{
+.cooperate-logos .service-item {
   height: 25px;
 
 }
 
-.footer-vertical_bottom{
+.footer-vertical_bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
 }
-.social-container{
+
+.social-container {
   display: flex;
 }
-.social-container .icon{
+
+.social-container .icon {
   display: inline-block;
   width: 32px;
   height: 32px;
@@ -1073,18 +1138,21 @@ a {
   background-repeat: no-repeat;
 }
 
-.sina-icon{
+.sina-icon {
   background-image: url(../img/icon_weibo.svg);
 }
-.twitter-icon{
+
+.twitter-icon {
   background-image: url(../img/icon_twitter.svg);
 
 }
-.github-icon{
+
+.github-icon {
   background-image: url(../img/icon_github.svg);
 }
+
 .copyright-container,
-.copyright-link{
+.copyright-link {
   height: 17px;
   font-size: 12px;
   font-weight: 300;
