@@ -894,11 +894,11 @@ a {
 }
 
 .card-course-price {
-  display: none;
+  display: block;
 }
 
 .card-course-price.card-course-hover {
-  display: block;
+  display: none;
 }
 
 .card-course-price-label {
@@ -928,7 +928,7 @@ a {
 
 /* hover时候的样式设置 */
 .card-course-price.card-course-hover{
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
 }
 .card-course-price.card-course-hover .card-course-price-vip-free{
