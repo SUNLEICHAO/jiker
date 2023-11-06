@@ -54,8 +54,6 @@ body {
   background: url(../img/arrow-more.svg) no-repeat 0 0;
 }
 
-
-
 .theme-dark-mini-btn {
   color: #fff;
   background-color: #333;
@@ -313,7 +311,7 @@ a {
 
 @keyframes linemove2 {
   0% {
-    top: -0;
+    top: 0;
   }
 
   100% {
@@ -363,8 +361,6 @@ a {
   position: relative;
   height: 200px;
   width: 15px;
-  /* top: 100px; */
-  /* left: 100px; */
   display: flex;
 }
 
@@ -721,6 +717,10 @@ a {
   margin-right: 20px;
 }
 
+.campus-hot-container {
+  position: relative;
+}
+
 .campus-hot-content {
   position: relative;
   width: 245px;
@@ -729,17 +729,6 @@ a {
   background-color: #fff;
 }
 
-.campus-hot-content::after {
-  content: " ";
-  position: absolute;
-  top: -150px;
-
-  left: 25px;
-  display: block;
-  width: 100px;
-  height: 100px;
-  background: url(../img/course-state.svg) no-repeat;
-}
 
 .hot-content-time {
   display: flex;
@@ -771,6 +760,15 @@ a {
   position: relative;
 }
 
+.campus-hot-status {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: url(../img/course-state.svg) no-repeat;
+}
 
 .hot-content-desc {
   margin: 13px 0 18px;
@@ -1233,6 +1231,11 @@ a {
   font-weight: 400;
   line-height: 20px;
   color: #d5d5d5;
+  cursor: pointer;
+}
+
+.nav-list .nav-item:hover {
+  color: #fff;
 }
 
 .cooperate-container {
