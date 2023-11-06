@@ -66,15 +66,30 @@
 
   <page-body>
     <div class="banner-section">
-      <div class="banner-carosel">
-        <a href="javascript" class="carosel-link">
-          <img class="carosel-link-img" src="./img/banner-ai.png" alt="">
+      <!-- 轮播图的板块 -->
+      <div class="banner-carousel">
+        <a class="carousel-link" href="javascript">
+          <img class="carousel-link-img" src="./img/banner-ai.png" alt="">
         </a>
         <a class="carousel-indicators" href="javascript:;">
           <i class="indicator-item active"></i>
           <i class="indicator-item"></i>
         </a>
+        <!-- 自己的实现方式 -->
+        <!-- <div class="carousel-streaming-list">
+          <span class="carousel-streaming-item first"></span>
+          <span class="carousel-streaming-item second"></span>
+          <span class="carousel-streaming-item third"></span>
+        </div> -->
+        <!-- 原网页的实现方式 -->
+        <div class="carousel-line">
+          <span class="carousel-line-item"></span>
+          <span class="carousel-line-item"></span>
+        </div>
+
+
       </div>
+      <!-- 轮播图内容 -->
       <div class="banner-content">
         <!-- banner的menu的列表，包含了多个技术方向 -->
         <ul class="banner-menu-list">
@@ -643,10 +658,6 @@
                 <span class="card-course-price-original"></span>
               </div>
               <div class="card-course-price card-course-hover">
-                <div class="card-course-price-vip-free">
-                  <span class="card-course-price-vip-label">VIP</span>
-                  免费学
-                </div>
                 <button class="theme-dark-mini-btn">
                   立即学习
                   <i class="link-white-arrow"></i>
@@ -1002,7 +1013,7 @@
           <div class="contact-container">
             <div class="contact-title">客服电话</div>
             <div class="contact-number">010-86468343</div>
-            <button class="contact-btn footer-btn">联系我们</button>
+            <a class="contact-btn footer-btn" href="javascript:;">联系我们</a>
           </div>
         </div>
         <div class="nav-container">
@@ -1051,15 +1062,15 @@
         </div>
         <div class="serve-container">
           <div class="footer-sub-title">服务与合作</div>
-          <button class="serve-button footer-btn">
+          <a class="serve-button footer-btn" href="javascript:;">
             <i class="enterprise-icon icon"></i>
             企业人才云
-          </button>
+          </a>
           <div class="serve-desc">成熟方案提高技术团队开发效率</div>
-          <button class="serve-button footer-btn">
+          <a class="serve-button footer-btn" href="javascript:;">
             <i class="school-icon icon"></i>
             高校学习云
-          </button>
+          </a>
           <div class="serve-desc">引进企业项目助力新工科</div>
         </div>
       </div>
