@@ -255,12 +255,19 @@ a {
 }
 
 .carousel-link {
-  display: flex;
+  display: block;
+  width: 1440px;
+  height: 380px;
+  margin: auto;
 }
 
 .carousel-link-img {
+  display: block;
   height: 380px;
   width: 1920px;
+  position: relative;
+  left: 50%;
+  margin-left: -960px;
 }
 
 .carousel-indicators {
@@ -413,14 +420,10 @@ a {
   width: 210px;
   height: 360px;
   background-color: rgba(37, 34, 34, .5);
-  ;
 }
 
 .banner-menu-list .banner-menu-item {
   display: flex;
-  /* 问题 为何此处不能使文字居中 */
-  /* align-items: center; */
-  justify-content: space-between;
   height: 40px;
   padding-left: 20px;
   cursor: pointer;
@@ -447,7 +450,6 @@ a {
 }
 
 .menu-item-nav .banner-item-name {
-  /* 问题。为何这里需要人为设定行高，否则被压为14px */
   line-height: 19px;
 }
 
@@ -843,6 +845,7 @@ a {
 
 .campus-total.vertical-bottom {
   cursor: pointer;
+  font-size: 14px;
 }
 
 .campus-total.vertical-bottom:hover {
@@ -852,9 +855,8 @@ a {
 .vertical-bottom .campus-total--item {
   position: relative;
   /* 问题，这里的1px哪里差出来的 */
-  top: 1px;
+  /* top: 1px; */
 }
-
 
 
 .campus-total--icon.icon-more::after {
